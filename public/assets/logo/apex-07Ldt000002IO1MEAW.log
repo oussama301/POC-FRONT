@@ -1,0 +1,409 @@
+62.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+10:02:37.2 (2611895)|USER_INFO|[EXTERNAL]|005dt000001XVIz|request@00ddt000000hsbbea4.org.force.com|(GMT+00:00) heure moyenne de Greenwich (GMT)|GMTZ
+10:02:37.2 (2664819)|EXECUTION_STARTED
+10:02:37.2 (2686292)|CODE_UNIT_STARTED|[EXTERNAL]|apex://SM002_Request/ACTION$createRequest
+10:02:37.2 (9890666)|HEAP_ALLOCATE|[93]|Bytes:3
+10:02:37.2 (9989730)|HEAP_ALLOCATE|[98]|Bytes:152
+10:02:37.2 (10005448)|HEAP_ALLOCATE|[415]|Bytes:408
+10:02:37.2 (10017441)|HEAP_ALLOCATE|[428]|Bytes:408
+10:02:37.2 (10026258)|HEAP_ALLOCATE|[536]|Bytes:48
+10:02:37.2 (10048071)|HEAP_ALLOCATE|[247]|Bytes:6
+10:02:37.2 (10059153)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:376
+10:02:37.2 (10063503)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:63
+10:02:37.2 (10069586)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (10074843)|VARIABLE_SCOPE_BEGIN|[166]|this|SM002_Request.FormDataWrapper|true|false
+10:02:37.2 (10158314)|VARIABLE_ASSIGNMENT|[166]|this|{}|0x42ab9d0
+10:02:37.2 (10166944)|STATEMENT_EXECUTE|[134]
+10:02:37.2 (10168239)|STATEMENT_EXECUTE|[136]
+10:02:37.2 (10169573)|STATEMENT_EXECUTE|[138]
+10:02:37.2 (10170427)|STATEMENT_EXECUTE|[140]
+10:02:37.2 (10171224)|STATEMENT_EXECUTE|[142]
+10:02:37.2 (10172117)|STATEMENT_EXECUTE|[144]
+10:02:37.2 (10172920)|STATEMENT_EXECUTE|[146]
+10:02:37.2 (10173924)|STATEMENT_EXECUTE|[148]
+10:02:37.2 (10174674)|STATEMENT_EXECUTE|[150]
+10:02:37.2 (10175759)|STATEMENT_EXECUTE|[152]
+10:02:37.2 (10176633)|STATEMENT_EXECUTE|[154]
+10:02:37.2 (10177417)|STATEMENT_EXECUTE|[156]
+10:02:37.2 (10178195)|STATEMENT_EXECUTE|[158]
+10:02:37.2 (10178944)|STATEMENT_EXECUTE|[160]
+10:02:37.2 (10179691)|STATEMENT_EXECUTE|[162]
+10:02:37.2 (10180434)|STATEMENT_EXECUTE|[164]
+10:02:37.2 (10185425)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+10:02:37.2 (13111536)|STATEMENT_EXECUTE|[166]
+10:02:37.2 (13144669)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:02:37.2 (13261434)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:02:37.2 (13265469)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13282770)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.filesCase|[]|0x42ab9d0
+10:02:37.2 (13299371)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:02:37.2 (13301391)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13308579)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.firstName|"azaz"|0x42ab9d0
+10:02:37.2 (13316917)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+10:02:37.2 (13318913)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13322251)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.lastName|"azaaz"|0x42ab9d0
+10:02:37.2 (13329921)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+10:02:37.2 (13331541)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13334685)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.company|"azaza"|0x42ab9d0
+10:02:37.2 (13342477)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+10:02:37.2 (13344263)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13348913)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.email|"med.oussama.boussabn (12 more) ..."|0x42ab9d0
+10:02:37.2 (13356917)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13360645)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.phone|""|0x42ab9d0
+10:02:37.2 (13369010)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+10:02:37.2 (13370722)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13373617)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.complaintSubject|"test"|0x42ab9d0
+10:02:37.2 (13381300)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13384537)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.lifeNoLife|""|0x42ab9d0
+10:02:37.2 (13392517)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13395710)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.requestReason|""|0x42ab9d0
+10:02:37.2 (13404716)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13407727)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.type|""|0x42ab9d0
+10:02:37.2 (13415361)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13418415)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.branchRisk|""|0x42ab9d0
+10:02:37.2 (13425760)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13428755)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.areaRegion|""|0x42ab9d0
+10:02:37.2 (13436200)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13439017)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.complaintReason|""|0x42ab9d0
+10:02:37.2 (13446141)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (13449035)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this.otherRaison|""|0x42ab9d0
+10:02:37.2 (14805678)|CODE_UNIT_STARTED|[EXTERNAL]|01pdt0000003lvF|SM002_Request.createRequest(SM002_Request.FormDataWrapper)
+10:02:37.2 (14932493)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:40
+10:02:37.2 (14937412)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:17
+10:02:37.2 (14939777)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+10:02:37.2 (14948155)|METHOD_ENTRY|[8]|01pdt0000003lvF|SM002_Request.SM002_Request()
+10:02:37.2 (14951879)|STATEMENT_EXECUTE|[8]
+10:02:37.2 (14955651)|STATEMENT_EXECUTE|[8]
+10:02:37.2 (14972009)|HEAP_ALLOCATE|[68]|Bytes:5
+10:02:37.2 (14995533)|HEAP_ALLOCATE|[74]|Bytes:5
+10:02:37.2 (15001031)|HEAP_ALLOCATE|[82]|Bytes:7
+10:02:37.2 (15015391)|SYSTEM_MODE_ENTER|true
+10:02:37.2 (15024882)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+10:02:37.2 (15027421)|STATEMENT_EXECUTE|[125]
+10:02:37.2 (15028504)|STATEMENT_EXECUTE|[134]
+10:02:37.2 (15029521)|STATEMENT_EXECUTE|[183]
+10:02:37.2 (15032890)|SYSTEM_MODE_EXIT|true
+10:02:37.2 (15039729)|METHOD_EXIT|[8]|SM002_Request
+10:02:37.2 (15042945)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:64
+10:02:37.2 (15046253)|VARIABLE_SCOPE_BEGIN|[11]|formData|SM002_Request.FormDataWrapper|true|false
+10:02:37.2 (15092544)|VARIABLE_ASSIGNMENT|[11]|formData|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (15101827)|SYSTEM_MODE_ENTER|true
+10:02:37.2 (15104579)|HEAP_ALLOCATE|[12]|Bytes:5
+10:02:37.2 (15107031)|STATEMENT_EXECUTE|[11]
+10:02:37.2 (15108161)|STATEMENT_EXECUTE|[12]
+10:02:37.2 (15110499)|HEAP_ALLOCATE|[12]|Bytes:164
+10:02:37.2 (15113315)|HEAP_ALLOCATE|[12]|Bytes:19
+10:02:37.2 (15116841)|HEAP_ALLOCATE|[12]|Bytes:20
+10:02:37.2 (15135901)|CONSTRUCTOR_ENTRY|[12]|01pdt0000003lvF|<init>()|SM002_Request.ResponseWrapper
+10:02:37.2 (15156504)|VARIABLE_SCOPE_BEGIN|[193]|this|SM002_Request.ResponseWrapper|true|false
+10:02:37.2 (15190807)|VARIABLE_ASSIGNMENT|[193]|this|{}|0x6ecf2d9c
+10:02:37.2 (15196662)|STATEMENT_EXECUTE|[183]
+10:02:37.2 (15197839)|STATEMENT_EXECUTE|[185]
+10:02:37.2 (15198953)|STATEMENT_EXECUTE|[187]
+10:02:37.2 (15200175)|STATEMENT_EXECUTE|[189]
+10:02:37.2 (15201240)|STATEMENT_EXECUTE|[191]
+10:02:37.2 (15211851)|STATEMENT_EXECUTE|[193]
+10:02:37.2 (15217227)|CONSTRUCTOR_EXIT|[12]|01pdt0000003lvF|<init>()|SM002_Request.ResponseWrapper
+10:02:37.2 (15223376)|VARIABLE_SCOPE_BEGIN|[12]|response|SM002_Request.ResponseWrapper|true|false
+10:02:37.2 (15238076)|VARIABLE_ASSIGNMENT|[12]|response|{}|0x6ecf2d9c
+10:02:37.2 (15242844)|STATEMENT_EXECUTE|[13]
+10:02:37.2 (15244889)|HEAP_ALLOCATE|[13]|Bytes:12
+10:02:37.2 (15314584)|HEAP_ALLOCATE|[13]|Bytes:259
+10:02:37.2 (15327222)|HEAP_ALLOCATE|[13]|Bytes:271
+10:02:37.2 (15350577)|USER_DEBUG|[13]|DEBUG|FormData => FormDataWrapper:[areaRegion=, branchRisk=, caseNumber=null, company=azaza, complaintReason=, complaintSubject=test, email=med.oussama.boussabnia@gmail.com, filesCase=(), firstName=azaz, lastName=azaaz, lifeNoLife=, otherRaison=, phone=, requestReason=, type=]
+10:02:37.2 (15357059)|STATEMENT_EXECUTE|[14]
+10:02:37.2 (15358706)|HEAP_ALLOCATE|[14]|Bytes:5
+10:02:37.2 (15397791)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (15410807)|METHOD_ENTRY|[14]|01pdt0000003lvF|SM002_Request.getContactsBy(String, String)
+10:02:37.2 (15414976)|VARIABLE_SCOPE_BEGIN|[107]|field|String|false|false
+10:02:37.2 (15419867)|VARIABLE_ASSIGNMENT|[107]|field|"Email"
+10:02:37.2 (15422408)|VARIABLE_SCOPE_BEGIN|[107]|value|String|false|false
+10:02:37.2 (15427369)|VARIABLE_ASSIGNMENT|[107]|value|"med.oussama.boussabn (12 more) ..."
+10:02:37.2 (15433840)|HEAP_ALLOCATE|[108]|Bytes:5
+10:02:37.2 (15436313)|STATEMENT_EXECUTE|[107]
+10:02:37.2 (15437252)|STATEMENT_EXECUTE|[108]
+10:02:37.2 (15438747)|HEAP_ALLOCATE|[108]|Bytes:64
+10:02:37.2 (15441446)|HEAP_ALLOCATE|[108]|Bytes:4
+10:02:37.2 (15443687)|HEAP_ALLOCATE|[108]|Bytes:1
+10:02:37.2 (15450115)|HEAP_ALLOCATE|[108]|Bytes:106
+10:02:37.2 (15454672)|VARIABLE_SCOPE_BEGIN|[108]|query|String|false|false
+10:02:37.2 (15460962)|VARIABLE_ASSIGNMENT|[108]|query|"SELECT Id, FirstName (86 more) ..."
+10:02:37.2 (15463474)|STATEMENT_EXECUTE|[109]
+10:02:37.2 (18508685)|SOQL_EXECUTE_BEGIN|[109]|Aggregations:0|SELECT Id, FirstName, LastName, Email, Phone FROM Contact WHERE Email = 'med.oussama.boussabnia@gmail.com'
+10:02:37.2 (32214908)|SOQL_EXECUTE_END|[109]|Rows:1
+10:02:37.2 (32243635)|HEAP_ALLOCATE|[109]|Bytes:8
+10:02:37.2 (32271078)|HEAP_ALLOCATE|[109]|Bytes:131
+10:02:37.2 (32339100)|HEAP_ALLOCATE|[109]|Bytes:8
+10:02:37.2 (32361093)|METHOD_EXIT|[14]|01pdt0000003lvF|SM002_Request.getContactsBy(String, String)
+10:02:37.2 (32368405)|VARIABLE_SCOPE_BEGIN|[14]|contacts|List<Contact>|true|false
+10:02:37.2 (32398985)|VARIABLE_ASSIGNMENT|[14]|contacts|[{"Id":"003dt000005Ln4UAAS","FirstName":"Boussabnia","LastName":"Oussama","Email":"med.oussama.boussabn (12 more) ...","Phone":"0679183235"}]|0xe411f47
+10:02:37.2 (32404643)|STATEMENT_EXECUTE|[15]
+10:02:37.2 (32416281)|VARIABLE_SCOPE_BEGIN|[15]|contactToUse|Contact|true|false
+10:02:37.2 (32422994)|VARIABLE_ASSIGNMENT|[15]|contactToUse|null|
+10:02:37.2 (32494076)|STATEMENT_EXECUTE|[31]
+10:02:37.2 (32496584)|STATEMENT_EXECUTE|[32]
+10:02:37.2 (32507287)|HEAP_ALLOCATE|[32]|Bytes:24
+10:02:37.2 (32519236)|VARIABLE_ASSIGNMENT|[32]|contactToUse|{"Id":"003dt000005Ln4UAAS","FirstName":"Boussabnia","LastName":"Oussama","Email":"med.oussama.boussabn (12 more) ...","Phone":"0679183235"}|0x2cf284b1
+10:02:37.2 (32522820)|STATEMENT_EXECUTE|[35]
+10:02:37.2 (32575937)|HEAP_ALLOCATE|[35]|Bytes:4
+10:02:37.2 (32657969)|VARIABLE_SCOPE_BEGIN|[35]|newRequest|Case|true|false
+10:02:37.2 (32668436)|VARIABLE_ASSIGNMENT|[35]|newRequest|{}|0x1f849cb8
+10:02:37.2 (32671753)|STATEMENT_EXECUTE|[36]
+10:02:37.2 (32674673)|HEAP_ALLOCATE|[36]|Bytes:4
+10:02:37.2 (33076143)|HEAP_ALLOCATE|[36]|Bytes:4
+10:02:37.2 (36812469)|HEAP_ALLOCATE|[36]|Bytes:16
+10:02:37.2 (36828829)|HEAP_ALLOCATE|[36]|Bytes:7
+10:02:37.2 (36894843)|HEAP_ALLOCATE|[36]|Bytes:4
+10:02:37.2 (39554317)|VARIABLE_ASSIGNMENT|[36]|this.RecordTypeId|"012dt0000002WLcAAM"|0x1f849cb8
+10:02:37.2 (39566669)|STATEMENT_EXECUTE|[37]
+10:02:37.2 (39644970)|VARIABLE_ASSIGNMENT|[37]|this.ContactId|"003dt000005Ln4UAAS"|0x1f849cb8
+10:02:37.2 (39649222)|STATEMENT_EXECUTE|[38]
+10:02:37.2 (39736884)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (39778359)|VARIABLE_ASSIGNMENT|[38]|this.ComplaintSubject__c|"test"|0x1f849cb8
+10:02:37.2 (39781983)|STATEMENT_EXECUTE|[39]
+10:02:37.2 (39812212)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (39822134)|HEAP_ALLOCATE|[39]|Bytes:4
+10:02:37.2 (39865845)|VARIABLE_ASSIGNMENT|[39]|this.Vie__c|false|0x1f849cb8
+10:02:37.2 (39869490)|STATEMENT_EXECUTE|[40]
+10:02:37.2 (39895968)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (39903555)|HEAP_ALLOCATE|[40]|Bytes:6
+10:02:37.2 (39922731)|VARIABLE_ASSIGNMENT|[40]|this.NonVie__c|false|0x1f849cb8
+10:02:37.2 (39926186)|STATEMENT_EXECUTE|[41]
+10:02:37.2 (39949620)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (39978323)|VARIABLE_ASSIGNMENT|[41]|this.SuppliedEmail|"med.oussama.boussabn (12 more) ..."|0x1f849cb8
+10:02:37.2 (39983567)|STATEMENT_EXECUTE|[42]
+10:02:37.2 (40009976)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40029645)|VARIABLE_ASSIGNMENT|[42]|this.LastName__c|"azaaz"|0x1f849cb8
+10:02:37.2 (40032955)|STATEMENT_EXECUTE|[43]
+10:02:37.2 (40058558)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40077625)|VARIABLE_ASSIGNMENT|[43]|this.FirstName__c|"azaz"|0x1f849cb8
+10:02:37.2 (40080867)|STATEMENT_EXECUTE|[44]
+10:02:37.2 (40104969)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40123195)|VARIABLE_ASSIGNMENT|[44]|this.Entreprise__c|"azaza"|0x1f849cb8
+10:02:37.2 (40126865)|STATEMENT_EXECUTE|[45]
+10:02:37.2 (40151395)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40170779)|VARIABLE_ASSIGNMENT|[45]|this.AreaRegion__c|""|0x1f849cb8
+10:02:37.2 (40174048)|STATEMENT_EXECUTE|[46]
+10:02:37.2 (40198095)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40216780)|VARIABLE_ASSIGNMENT|[46]|this.PhoneNumber__c|""|0x1f849cb8
+10:02:37.2 (40220158)|STATEMENT_EXECUTE|[47]
+10:02:37.2 (40243696)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40261941)|VARIABLE_ASSIGNMENT|[47]|this.BranchRisk__c|""|0x1f849cb8
+10:02:37.2 (40265327)|STATEMENT_EXECUTE|[48]
+10:02:37.2 (40288844)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40313404)|VARIABLE_ASSIGNMENT|[48]|this.Type|""|0x1f849cb8
+10:02:37.2 (40316657)|STATEMENT_EXECUTE|[49]
+10:02:37.2 (40344006)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40363584)|VARIABLE_ASSIGNMENT|[49]|this.ComplaintReason__c|""|0x1f849cb8
+10:02:37.2 (40367438)|STATEMENT_EXECUTE|[50]
+10:02:37.2 (40390656)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40409639)|VARIABLE_ASSIGNMENT|[50]|this.CaseType__c|""|0x1f849cb8
+10:02:37.2 (40413002)|STATEMENT_EXECUTE|[51]
+10:02:37.2 (40414902)|HEAP_ALLOCATE|[51]|Bytes:8
+10:02:37.2 (40429956)|VARIABLE_ASSIGNMENT|[51]|this.ReclamationStatus__c|"Nouvelle"|0x1f849cb8
+10:02:37.2 (40433176)|STATEMENT_EXECUTE|[52]
+10:02:37.2 (40457088)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:37.2 (40476809)|VARIABLE_ASSIGNMENT|[52]|this.Autres__c|""|0x1f849cb8
+10:02:37.2 (40479956)|STATEMENT_EXECUTE|[53]
+10:02:37.2 (40481502)|HEAP_ALLOCATE|[53]|Bytes:20
+10:02:37.2 (40490084)|METHOD_ENTRY|[53]|01pdt0000003lvF|SM002_Request.getQueueByName(String)
+10:02:37.2 (40556092)|VARIABLE_SCOPE_BEGIN|[119]|name|String|false|false
+10:02:37.2 (40562636)|VARIABLE_ASSIGNMENT|[119]|name|"RequestManagersQueue"
+10:02:37.2 (40575450)|HEAP_ALLOCATE|[120]|Bytes:5
+10:02:37.2 (40578466)|STATEMENT_EXECUTE|[119]
+10:02:37.2 (40579441)|STATEMENT_EXECUTE|[120]
+10:02:37.2 (40580919)|HEAP_ALLOCATE|[120]|Bytes:72
+10:02:37.2 (40594625)|HEAP_ALLOCATE|[120]|Bytes:4
+10:02:37.2 (40603166)|HEAP_ALLOCATE|[120]|Bytes:7
+10:02:37.2 (41036422)|SOQL_EXECUTE_BEGIN|[120]|Aggregations:0|SELECT Id FROM Group WHERE (DeveloperName = :tmpVar1 AND Type = 'Queue')
+10:02:37.2 (47373429)|SOQL_EXECUTE_END|[120]|Rows:1
+10:02:37.2 (47398959)|HEAP_ALLOCATE|[120]|Bytes:8
+10:02:37.2 (47425309)|HEAP_ALLOCATE|[120]|Bytes:29
+10:02:37.2 (47455192)|HEAP_ALLOCATE|[120]|Bytes:8
+10:02:37.2 (47473264)|METHOD_EXIT|[53]|01pdt0000003lvF|SM002_Request.getQueueByName(String)
+10:02:37.2 (47523994)|HEAP_ALLOCATE|[53]|Bytes:8
+10:02:37.2 (47630713)|VARIABLE_ASSIGNMENT|[53]|this.OwnerId|"00Gdt000000ATf3EAG"|0x1f849cb8
+10:02:37.2 (47636077)|STATEMENT_EXECUTE|[57]
+10:02:37.2 (47637075)|STATEMENT_EXECUTE|[57]
+10:02:37.2 (47638014)|STATEMENT_EXECUTE|[58]
+10:02:37.2 (47675981)|HEAP_ALLOCATE|[58]|Bytes:8
+10:02:37.2 (47688580)|DML_BEGIN|[58]|Op:Insert|Type:Case|Rows:1
+10:02:37.2 (47711271)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+10:02:37.2 (73631634)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Case
+10:02:37.2 (73660851)|CODE_UNIT_FINISHED|Flow:Case
+10:02:37.2 (106670241)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Case:new
+10:02:37.2 (106702060)|VALIDATION_RULE|03ddt0000001M3J|VR001_GiftRequestApprove
+10:02:37.2 (107028411)|VALIDATION_FORMULA|AND(
+    ISPICKVAL( CaseStatus__c , "approved"),  
+    ISBLANK(QuantitAttribue__c)
+)|QuantitAttribue__c=null , CaseStatus__c=null
+10:02:37.2 (107045896)|VALIDATION_PASS
+10:02:37.2 (107047951)|VALIDATION_RULE|03ddt0000001M3N|VR005_Request
+10:02:37.2 (107311437)|VALIDATION_FORMULA|AND(
+    ISPICKVAL(Type, 'Autres à saisir'),
+    OR(
+				ISBLANK(TEXT(CaseType__c)) ,
+     ComplaintSubject__c == '' )
+)|Type=null , CaseType__c=null , ComplaintSubject__c=test
+10:02:37.2 (107318871)|VALIDATION_PASS
+10:02:37.2 (107319985)|VALIDATION_RULE|03ddt00000036dZ|VR_008StatusReclamation
+10:02:37.2 (107481330)|VALIDATION_FORMULA|CASE(
+    TEXT(ReclamationStatus__c),
+    "Nouvelle", 1,
+    "Qualification", 2,
+    "Traitement", 3,
+    "Clôture", 4,
+    0
+) < 
+CASE(
+    TEXT(PRIORVALUE(ReclamationStatus__c)),
+    "Nouvelle", 1,
+    "Qualification", 2,
+    "Traitement", 3,
+    "Clôture", 4,
+    0
+)|ReclamationStatus__c=Nouvelle
+10:02:37.2 (107487847)|VALIDATION_PASS
+10:02:37.2 (107502817)|CODE_UNIT_FINISHED|Validation:Case:new
+10:02:37.2 (203878113)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Case
+10:02:37.2 (205620526)|CODE_UNIT_FINISHED|Workflow:Case
+10:02:37.2 (205730123)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Case
+10:02:37.208 (208937562)|FLOW_CREATE_INTERVIEW_BEGIN|00Ddt000000HSBB|300dt000001yyry|301dt0000030h89
+10:02:37.208 (208990435)|FLOW_CREATE_INTERVIEW_END|186857de50d35421bad458bfece91948ceda0df-5735|[Case]: Entitlement Assigning
+10:02:37.209 (209194758)|FLOW_START_INTERVIEWS_BEGIN|1
+10:02:37.209 (209219923)|FLOW_START_INTERVIEW_BEGIN|186857de50d35421bad458bfece91948ceda0df-5735|[Case]: Entitlement Assigning
+10:02:37.209 (209361376)|FLOW_START_INTERVIEW_END|186857de50d35421bad458bfece91948ceda0df-5735|[Case]: Entitlement Assigning
+10:02:37.238 (238377885)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Case:500dt000003FPaj
+10:02:37.238 (238402729)|VALIDATION_RULE|03ddt0000001M3J|VR001_GiftRequestApprove
+10:02:37.238 (238604874)|VALIDATION_FORMULA|AND(
+    ISPICKVAL( CaseStatus__c , "approved"),  
+    ISBLANK(QuantitAttribue__c)
+)|QuantitAttribue__c=null , CaseStatus__c=null
+10:02:37.238 (238610850)|VALIDATION_PASS
+10:02:37.238 (238611971)|VALIDATION_RULE|03ddt0000001M3N|VR005_Request
+10:02:37.238 (238749488)|VALIDATION_FORMULA|AND(
+    ISPICKVAL(Type, 'Autres à saisir'),
+    OR(
+				ISBLANK(TEXT(CaseType__c)) ,
+     ComplaintSubject__c == '' )
+)|Type=null , CaseType__c=null , ComplaintSubject__c=test
+10:02:37.238 (238754721)|VALIDATION_PASS
+10:02:37.238 (238755838)|VALIDATION_RULE|03ddt00000036dZ|VR_008StatusReclamation
+10:02:37.238 (238868540)|VALIDATION_FORMULA|CASE(
+    TEXT(ReclamationStatus__c),
+    "Nouvelle", 1,
+    "Qualification", 2,
+    "Traitement", 3,
+    "Clôture", 4,
+    0
+) < 
+CASE(
+    TEXT(PRIORVALUE(ReclamationStatus__c)),
+    "Nouvelle", 1,
+    "Qualification", 2,
+    "Traitement", 3,
+    "Clôture", 4,
+    0
+)|ReclamationStatus__c=Nouvelle
+10:02:37.238 (238873894)|VALIDATION_PASS
+10:02:37.238 (238882725)|CODE_UNIT_FINISHED|Validation:Case:500dt000003FPaj
+10:02:37.318 (318362453)|CODE_UNIT_STARTED|[EXTERNAL]|SLA
+10:02:37.318 (318449284)|CODE_UNIT_FINISHED|SLA
+10:02:37.209 (325699051)|FLOW_START_INTERVIEWS_END|1
+10:02:37.209 (325735069)|FLOW_INTERVIEW_FINISHED|186857de50d35421bad458bfece91948ceda0df-5735|[Case]: Entitlement Assigning
+10:02:37.339 (339200915)|FLOW_CREATE_INTERVIEW_BEGIN|00Ddt000000HSBB|300dt000001z1pq|301dt000003t67z
+10:02:37.339 (339260655)|FLOW_CREATE_INTERVIEW_END|186957de50d35421bad458bfece91948ceda0df-5736|FT003_NotifyRequestManagersfterCreation
+10:02:37.339 (339456780)|FLOW_START_INTERVIEWS_BEGIN|1
+10:02:37.339 (339483811)|FLOW_START_INTERVIEW_BEGIN|186957de50d35421bad458bfece91948ceda0df-5736|FT003_NotifyRequestManagersfterCreation
+10:02:37.339 (339625311)|FLOW_START_INTERVIEW_END|186957de50d35421bad458bfece91948ceda0df-5736|FT003_NotifyRequestManagersfterCreation
+10:02:37.339 (706865575)|WF_EMAIL_SENT|Reference:emailSimple|Recipients:asmae.elfenni@da-tech.ma oumayma.medouar@da-tech.ma hbelahsen@scrmaroc.com yasskour@scrmaroc.com haffaf@scrmaroc.com reda.mihradi@da-tech.ma sbichri@scrmaroc.com asamir@scrmaroc.com lsaissi@scrmaroc.com oussama.boussabnia@da-tech.ma gbenbrahim@scrmaroc.com sbendahmane@scrmaroc.com |CcEmails:
+10:02:37.339 (707600764)|FLOW_START_INTERVIEWS_END|1
+10:02:37.339 (707635348)|FLOW_INTERVIEW_FINISHED|186957de50d35421bad458bfece91948ceda0df-5736|FT003_NotifyRequestManagersfterCreation
+10:02:37.710 (710936627)|FLOW_CREATE_INTERVIEW_BEGIN|00Ddt000000HSBB|300dt0000021LpF|301dt000004xuWw
+10:02:37.710 (710986646)|FLOW_CREATE_INTERVIEW_END|187257de50d35421bad458bfece91948ceda0df-5739|TF005_SendEmailToContactAboutRequest
+10:02:37.711 (711250743)|FLOW_START_INTERVIEWS_BEGIN|1
+10:02:37.711 (711292868)|FLOW_START_INTERVIEW_BEGIN|187257de50d35421bad458bfece91948ceda0df-5739|TF005_SendEmailToContactAboutRequest
+10:02:37.711 (711426679)|FLOW_START_INTERVIEW_END|187257de50d35421bad458bfece91948ceda0df-5739|TF005_SendEmailToContactAboutRequest
+10:02:37.711 (894755408)|EMAIL_QUEUE|subject: Status of your request, bccSender: false, saveAsActivity: false, useSignature: false, toAddresses: [], targetObjectId: 003dt000005Ln4U, whatId: 500dt000003FPaj, templateId: 00Xdt0000003PWX, htmlBody: <html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear Boussabnia Oussama,<br />
+<br />
+We are writing to provide you with an update regarding the progress of your request --00001259.<br />
+We have successfully registered your request on&nbsp;22/01/2025. Our team is currently reviewing the information provided and will keep you updated on any next steps.<br />
+<br />
+Best regards,<br />
+SCR Team.<br />
+<br />
+&nbsp;</body>
+</html>, 
+10:02:37.711 (896072122)|FLOW_START_INTERVIEWS_END|1
+10:02:37.711 (896105288)|FLOW_INTERVIEW_FINISHED|187257de50d35421bad458bfece91948ceda0df-5739|TF005_SendEmailToContactAboutRequest
+10:02:37.2 (896835014)|CODE_UNIT_FINISHED|Flow:Case
+10:02:37.2 (902861609)|CODE_UNIT_STARTED|[EXTERNAL]|SLA
+10:02:37.2 (932617208)|SLA_PROCESS_CASE|500dt000003FPaj
+10:02:37.2 (974091161)|WF_RULE_FILTER|[Requête : Fermée égal à true]
+10:02:37.2 (974132324)|WF_RULE_EVAL_VALUE|false
+10:02:37.2 (974169678)|SLA_EVAL_MILESTONE|553dt0000000rdp
+10:02:38.5 (1005611499)|SLA_END|SlaProcessController:&#124;Case:1&#124;LoadTime:30&#124;ProcTime:71&#124;CM CUD:1&#124;0&#124;0&#124;New Trigger:0
+10:02:38.5 (1005694833)|CODE_UNIT_FINISHED|SLA
+10:02:38.5 (1005789103)|CODE_UNIT_STARTED|[EXTERNAL]|Flow:Case
+10:02:38.5 (1005800850)|CODE_UNIT_FINISHED|Flow:Case
+10:02:38.5 (1007637359)|DML_END|[58]
+10:02:38.5 (1008819458)|STATEMENT_EXECUTE|[59]
+10:02:38.5 (1008869375)|HEAP_ALLOCATE|[59]|Bytes:13
+10:02:38.5 (1009351163)|HEAP_ALLOCATE|[59]|Bytes:417
+10:02:38.5 (1009370502)|HEAP_ALLOCATE|[59]|Bytes:430
+10:02:38.5 (1009395581)|USER_DEBUG|[59]|DEBUG|newRequest : Case:{RecordTypeId=012dt0000002WLcAAM, ContactId=003dt000005Ln4UAAS, ComplaintSubject__c=test, Vie__c=false, NonVie__c=false, SuppliedEmail=med.oussama.boussabnia@gmail.com, LastName__c=azaaz, FirstName__c=azaz, Entreprise__c=azaza, AreaRegion__c=, PhoneNumber__c=, BranchRisk__c=, Type=, ComplaintReason__c=, CaseType__c=, ReclamationStatus__c=Nouvelle, Autres__c=, OwnerId=00Gdt000000ATf3EAG, Id=500dt000003FPajAAG}
+10:02:38.5 (1009404536)|STATEMENT_EXECUTE|[60]
+10:02:38.5 (1009511129)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x6ecf2d9c
+10:02:38.5 (1009520365)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|null
+10:02:38.5 (1009531621)|VARIABLE_ASSIGNMENT|[187]|this.metadata|null|0x6ecf2d9c
+10:02:38.5 (1009537823)|STATEMENT_EXECUTE|[61]
+10:02:38.5 (1009560583)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x6ecf2d9c
+10:02:38.5 (1009574607)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|true
+10:02:38.5 (1009578791)|HEAP_ALLOCATE|[189]|Bytes:5
+10:02:38.5 (1009583143)|VARIABLE_ASSIGNMENT|[189]|this.isSuccess|true|0x6ecf2d9c
+10:02:38.5 (1009587720)|STATEMENT_EXECUTE|[62]
+10:02:38.5 (1009589894)|HEAP_ALLOCATE|[62]|Bytes:47
+10:02:38.5 (1009609983)|HEAP_ALLOCATE|[62]|Bytes:4
+10:02:38.5 (1009994619)|SOQL_EXECUTE_BEGIN|[62]|Aggregations:0|SELECT CaseNumber FROM Case WHERE id = :tmpVar1
+10:02:38.5 (1019489823)|SOQL_EXECUTE_END|[62]|Rows:1
+10:02:38.5 (1019523485)|HEAP_ALLOCATE|[62]|Bytes:8
+10:02:38.5 (1019553508)|HEAP_ALLOCATE|[62]|Bytes:51
+10:02:38.5 (1019631629)|HEAP_ALLOCATE|[62]|Bytes:8
+10:02:38.5 (1019654668)|VARIABLE_SCOPE_BEGIN|[62]|temp_case|List<Case>|true|false
+10:02:38.5 (1019691448)|VARIABLE_ASSIGNMENT|[62]|temp_case|[{"CaseNumber":"00001259","Id":"500dt000003FPajAAG"}]|0x48cbef83
+10:02:38.5 (1019697751)|STATEMENT_EXECUTE|[63]
+10:02:38.5 (1019703291)|HEAP_ALLOCATE|[63]|Bytes:8
+10:02:38.5 (1019765451)|HEAP_ALLOCATE|[63]|Bytes:12
+10:02:38.5 (1019822044)|HEAP_ALLOCATE|[63]|Bytes:21
+10:02:38.5 (1019839539)|HEAP_ALLOCATE|[63]|Bytes:37
+10:02:38.5 (1019946564)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"isSuccess":true}|0x6ecf2d9c
+10:02:38.5 (1019955022)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|"Request 00001259 cre (17 more) ..."
+10:02:38.5 (1019965669)|VARIABLE_ASSIGNMENT|[191]|this.message|"Request 00001259 cre (17 more) ..."|0x6ecf2d9c
+10:02:38.5 (1020018022)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"areaRegion":"","branchRisk":"","company":"azaza","complaintReason":"","complaintSubject":"test","email":"med.oussama.boussabn (12 more) ...","filesCase":"0x22a5beec","firstName":"azaz","lastName":"azaaz","lifeNoLife":"","otherRaison":"","phone":"","requestReason":"","type":""}|0x42ab9d0
+10:02:38.5 (1020057861)|STATEMENT_EXECUTE|[64]
+10:02:38.5 (1020060805)|STATEMENT_EXECUTE|[88]
+10:02:38.5 (1020067125)|SYSTEM_MODE_EXIT|true
+10:02:38.240 (1240600226)|CUMULATIVE_LIMIT_USAGE
+10:02:38.240 (1240600226)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 31 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of Publish Immediate DML: 0 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 221 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+10:02:38.240 (1240600226)|CUMULATIVE_LIMIT_USAGE_END
+
+10:02:38.5 (1240706314)|CODE_UNIT_FINISHED|SM002_Request.createRequest(SM002_Request.FormDataWrapper)
+10:02:38.5 (1240952751)|CODE_UNIT_FINISHED|apex://SM002_Request/ACTION$createRequest
+10:02:38.5 (1240961183)|EXECUTION_FINISHED

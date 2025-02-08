@@ -1,0 +1,46 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": { "name": "North America" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [-168.0, 83.0], [-52.0, 83.0], [-52.0, 7.0], [-168.0, 7.0], [-168.0, 83.0]
+          ]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Europe" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [-10.0, 71.0], [40.0, 71.0], [40.0, 35.0], [-10.0, 35.0], [-10.0, 71.0]
+          ]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "Asia" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [25.0, 81.0], [180.0, 81.0], [180.0, -10.0], [25.0, -10.0], [25.0, 81.0]
+          ]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "name": "South America" },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [-81.0, 13.0], [-34.0, 13.0], [-34.0, -56.0], [-81.0, -56.0], [-81.0, 13.0]
+          ]]
+        }
+      }
+    ]
+  }
+  

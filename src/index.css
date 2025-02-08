@@ -1,0 +1,66 @@
+.react-grid-layout {
+  background: #FFF; /* Match your dashboard background */
+}
+
+.react-grid-item {
+  transition: all 0.2s ease;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #888;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+html,
+body,
+#root,
+.app,
+.content {
+  color: initial;
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.nivo-label {
+  font-family: "Source Sans Pro", sans-serif;
+  color: inherit; /* Use inherited color to respect theme settings */
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.css-1e5wp2b-MuiTypography-root{
+
+  color: "black";
+
+}
