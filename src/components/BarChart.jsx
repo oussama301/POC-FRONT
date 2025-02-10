@@ -26,84 +26,92 @@ const BarChart = ({ data }) => {
     "#4DB6AC", // Teal
     "#7986CB", // Indigo
     "#A1887F", // Brown
-    "#90A4AE"  // Gray
+    "#90A4AE", // Gray
   ];
 
   return (
-    <ResponsiveBar
-      data={formattedData}
-      keys={["value"]}
-      indexBy="category"
-      margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
-      padding={0.3}
-      valueScale={{ type: "linear" }}
-      indexScale={{ type: "band", round: true }}
-      
-      // Apply custom colors
-      colors={({ index }) => customColors[index % customColors.length]}
+    <div style={{ height: "400px" }}>
+      <ResponsiveBar
+        data={formattedData}
+        keys={["value"]}
+        indexBy="category"
+        margin={{ top: 50, right: 200, bottom: 70, left: 60 }} // Increased right margin for spacing
+        padding={0.3}
+        valueScale={{ type: "linear" }}
+        indexScale={{ type: "band", round: true }}
+        
+        // Apply custom colors
+        colors={({ index }) => customColors[index % customColors.length]}
 
-      borderColor={{ from: "color", modifiers: [["darker", 1.6]] }}
-      
-      // Display values inside the bars
-      label={(d) => d.value}
-      labelSkipHeight={20}
-      labelTextColor={{ from: "color", modifiers: [["darker", 2]] }}
+        borderColor={{ from: "color", modifiers: [["darker", 1.6]] }}
+        
+        // Display values inside the bars
+        label={(d) => d.value}
+        labelSkipHeight={20}
+        labelTextColor={{ from: "color", modifiers: [["darker", 2]] }}
 
-      // Tooltip to show percentage
-      tooltip={({ id, value }) => (
-        <div
-          style={{
-            background: "white",
-            padding: "10px",
-            border: "1px solid #ccc",
-            color: "#333",
-          }}
-        >
-          <strong>{id}</strong>: {((value / total) * 100).toFixed(2)}%
-        </div>
-      )}
+        // Tooltip to show percentage
+        tooltip={({ id, value, index }) => (
+          <div
+            style={{
+              background: "white",
+              padding: "10px",
+              border: "1px solid #ccc",
+              color: "#333",
+            }}
+          >
+            <strong>{id}</strong>: {((value / total) * 100).toFixed(2)}%
+          </div>
+        )}
 
-      axisTop={null}
-      axisRight={null}
-      axisBottom={{
-        tickSize: 5,
-        tickPadding: 5,
-        tickRotation: 0,
-        //legend: "Category",
-        legendPosition: "middle",
-        legendOffset: 40,
-      }}
-      axisLeft={{
-        tickSize: 5,
-        tickPadding: 5,
-        tickRotation: 0,
-        //legend: "Value",
-        legendPosition: "middle",
-        legendOffset: -50,
-      }}
-      
-      legends={[
-        {
-          dataFrom: "keys",
-          anchor: "bottom",
-          direction: "row",
-          translateX: 0,
-          translateY: 50,
-          itemWidth: 80,
-          itemHeight: 20,
-          itemDirection: "left-to-right",
-          symbolSize: 20,
-          effects: [
-            {
-              on: "hover",
-              style: {
-                itemOpacity: 1,
+        axisTop={null}
+        axisRight={null}
+        axisBottom={{
+          tickSize: 5,
+          tickPadding: 5,
+          tickRotation: 0,
+          legend: "Categories", // Display x-axis legend
+          legendPosition: "middle",
+          legendOffset: 50,
+        }}
+        axisLeft={{
+          tickSize: 5,
+          tickPadding: 5,
+          tickRotation: 0,
+          legend: "Value",
+          legendPosition: "middle",
+          legendOffset: -50,
+        }}
+
+        legends={[
+          {
+            data: data.x_data.map((x, index) => ({
+              id: x,
+              label: x, // Display x_data values
+              color: customColors[index % customColors.length],
+            })),
+            anchor: "right", // Position legend on the right side
+            direction: "column",
+            justify: false,
+            translateX: 150, // Increased spacing from chart
+            itemWidth: 100,
+            itemHeight: 25, // Increased height for better spacing
+            itemTextColor: "#333",
+            symbolSize: 20,
+            symbolSpacing: 8, // Added spacing between legend items
+            symbolShape: "circle",
+            effects: [
+              {
+                on: "hover",
+                style: {
+                  itemOpacity: 1,
+                },
               },
-            },
-          ],
-        },
-      ]}
-    />
+            ],
+          },
+        ]}
+      />
+    </div>
   );
 };
 

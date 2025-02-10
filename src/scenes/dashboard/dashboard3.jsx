@@ -217,27 +217,40 @@ const Header = ({ title, subtitle, titleColor = "#FFFFFF", subtitleColor = "#4CA
 
   return (
     <Box
-            sx={{
-              position: 'relative',
-              width: '100%',
-              minHeight: '100vh',  // Ensure it covers full viewport height
-              backgroundImage: `
-                linear-gradient(to bottom, ${
-                  theme.palette.mode === 'dark' 
-                    ? 'rgba(156, 139, 139, 0.8), rgba(103, 98, 98, 0.5)' 
-                    : 'rgba(30, 115, 71, 0.2), rgba(95, 134, 119, 0.5)'
-                }),
-                url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='lozenge' patternUnits='userSpaceOnUse' width='30' height='30' patternTransform='rotate(45)'%3E%3Crect x='0' y='0' width='20' height='20' fill='${theme.palette.mode === 'dark' ? 'rgba(197, 197, 197, 0.6)' : 'rgba(0,0,0,0.1)'}'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23lozenge)'/%3E%3C/svg%3E")
-              `,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              borderRadius: '0px',
-              padding: '20px',
-              color: theme.palette.mode === "dark" ? colors.grey[100] : colors.grey[900],
-            }}
-          >
-      <Box display="flex" justifyContent="space-between" alignItems="center">
-      <Box display="flex" alignItems="center" gap="10px">
+      sx={{
+        width: '100%',
+        minHeight: '100vh',
+        backgroundImage: `linear-gradient(to bottom,rgb(230, 237, 241),rgb(222, 230, 236))`,
+        color: colors.grey[100],
+        padding: '20px',
+      }}
+    >
+      <Box
+  sx={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "3px",
+    backgroundImage: `
+      linear-gradient(to bottom, ${
+        theme.palette.mode === 'dark' 
+          ? 'rgba(156, 139, 139, 0.8), rgba(103, 98, 98, 0.5)' 
+          : 'rgba(30, 115, 71, 0.2), rgba(95, 134, 119, 0.5)'
+      }),
+      url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='lozenge' patternUnits='userSpaceOnUse' width='30' height='30' patternTransform='rotate(45)'%3E%3Crect x='0' y='0' width='20' height='20' fill='${theme.palette.mode === 'dark' ? 'rgba(197, 197, 197, 0.6)' : 'rgba(0,0,0,0.1)'}'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23lozenge)'/%3E%3C/svg%3E")
+    `,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    borderRadius: "12px",
+    boxShadow: "0px 5px 15px rgba(10, 9, 9, 0.3)",
+    color: theme.palette.mode === "dark" ? colors.grey[100] : colors.grey[900],
+    minHeight: "120px", // Ensures a good height for visibility
+    width: "100%", // Makes it responsive
+  }}
+>
+
+
+      <Box display="flex" alignItems="center" gap="30px">
               <img src={logoPath || "/assets/logo/OCP.webp"} alt="Dashboard Logo" width="100" height="100" />
               <Header 
             title={groupName} 
@@ -257,19 +270,25 @@ const Header = ({ title, subtitle, titleColor = "#FFFFFF", subtitleColor = "#4CA
             sx={{
               backgroundColor: "#1565C1",
               color: "#fff",
+              padding: "10px 20px",
               fontSize: "14px",
               fontWeight: "bold",
-              padding: "10px 20px",
+              borderRadius: "10px",
+              boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.2)",
+              transition: "0.3s",
+              "&:hover": {
+                transform: "scale(1.05)",
+                backgroundColor: "#0D47A0",
+                boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.3)",
+              },
             }}
-            onClick={handleDownloadPDF}
-            
           >
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download Report (PDF)
+            Download 
           </Button>
         </Box>
       </Box>
-
+   
 
   
       <Box
@@ -374,6 +393,7 @@ const Header = ({ title, subtitle, titleColor = "#FFFFFF", subtitleColor = "#4CA
         </Box>
       </Modal>
     </Box>
+    
   );
 };
   export default Dashboard3;

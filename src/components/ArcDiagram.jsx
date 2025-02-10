@@ -3,7 +3,7 @@ import * as d3 from "d3";
 
 const ArcDiagram = ({ data, title }) => {
   const svgRef = useRef();
-  const tooltipRef = useRef(); // Tooltip reference for better DOM control
+  const tooltipRef = useRef();
   const [tooltip, setTooltip] = useState({
     visible: false,
     x: 0,
@@ -15,7 +15,6 @@ const ArcDiagram = ({ data, title }) => {
 
   console.log("🚀 Arc Diagram received raw data:", JSON.stringify(data, null, 2));
 
-  // 🔹 Validate data before processing
   const isValidData =
     data &&
     Array.isArray(data.x_data) &&
@@ -28,15 +27,13 @@ const ArcDiagram = ({ data, title }) => {
     console.error("❌ Invalid Arc Diagram data! Using fallback values.");
   }
 
-  // 🔹 Provide fallback data if input is invalid
   const safeData = isValidData
     ? data
     : {
         x_data: ["Q1", "Q2", "Q3", "Q4"],
-        y_data: [44970, 33214, 6804, 5048], // Default values
+        y_data: [44970, 33214, 6804, 5048],
       };
 
-  // Convert data into nodes and links
   const nodes = safeData.x_data.map((label, index) => ({
     id: label,
     value: safeData.y_data[index],
@@ -55,7 +52,6 @@ const ArcDiagram = ({ data, title }) => {
   useEffect(() => {
     const width = 400, height = 300;
 
-    // Clear previous SVG content
     d3.select(svgRef.current).selectAll("*").remove();
 
     const svg = d3.select(svgRef.current)
@@ -66,7 +62,6 @@ const ArcDiagram = ({ data, title }) => {
       .domain(nodes.map(d => d.id))
       .range([50, width - 50]);
 
-    // Create links (curved arcs)
     svg.selectAll("path")
       .data(links)
       .enter().append("path")
@@ -80,7 +75,6 @@ const ArcDiagram = ({ data, title }) => {
         return `M${startX},${midY} A${(endX - startX) / 2},${(endX - startX) / 2} 0 0,1 ${endX},${midY}`;
       });
 
-    // Create nodes (circles)
     svg.selectAll("circle")
       .data(nodes)
       .enter().append("circle")
@@ -89,9 +83,8 @@ const ArcDiagram = ({ data, title }) => {
       .attr("r", 8)
       .attr("fill", d => d.color)
       .on("mouseover", function (event, d) {
-        d3.select(this).transition().duration(150).attr("r", 12); // ✅ Increase size on hover
+        d3.select(this).transition().duration(150).attr("r", 12);
 
-        // ✅ Set tooltip state
         setTooltip({
           visible: true,
           x: event.pageX + 10,
@@ -106,7 +99,6 @@ const ArcDiagram = ({ data, title }) => {
         }
       })
       .on("mousemove", function (event) {
-        // ✅ Move tooltip dynamically
         setTooltip((prev) => ({
           ...prev,
           x: event.pageX + 10,
@@ -114,7 +106,7 @@ const ArcDiagram = ({ data, title }) => {
         }));
       })
       .on("mouseout", function () {
-        d3.select(this).transition().duration(150).attr("r", 8); // ✅ Reset size on hover out
+        d3.select(this).transition().duration(150).attr("r", 8);
 
         setTooltip({ visible: false, label: "", value: 0, color: "" });
 
@@ -123,7 +115,6 @@ const ArcDiagram = ({ data, title }) => {
         }
       });
 
-    // Add labels
     svg.selectAll("text")
       .data(nodes)
       .enter().append("text")
@@ -136,9 +127,13 @@ const ArcDiagram = ({ data, title }) => {
   }, [nodes, links]);
 
   return (
-    <div style={{ width: "100%", height: "300px", textAlign: "center", position: "relative" }}>
+    <div style={{ width: "100%", textAlign: "center", position: "relative" }}>
       <h3 style={{ marginBottom: "10px", color: "#4CAF50" }}>{title}</h3>
-      <svg ref={svgRef}></svg>
+
+      {/* SVG Diagram */}
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <svg ref={svgRef}></svg>
+      </div>
 
       {/* Tooltip */}
       <div
@@ -170,6 +165,34 @@ const ArcDiagram = ({ data, title }) => {
           }}
         />
         <span>{tooltip.label}: {tooltip.value}</span>
+      </div>
+
+      {/* Legend at the Bottom */}
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "15px",
+          marginTop: "15px",
+          padding: "10px",
+          background: "rgba(240, 240, 240, 0.8)",
+          borderRadius: "10px",
+        }}
+      >
+        {nodes.map((node, index) => (
+          <div key={index} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+            <div
+              style={{
+                width: "12px",
+                height: "12px",
+                backgroundColor: node.color,
+                borderRadius: "50%",
+              }}
+            ></div>
+            <span style={{ fontSize: "12px", color: "#333" }}>{node.id}</span>
+          </div>
+        ))}
       </div>
     </div>
   );

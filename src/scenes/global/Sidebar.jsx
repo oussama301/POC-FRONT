@@ -116,7 +116,7 @@ const Sidebar = ({ activeDashboard, setActiveDashboard }) => {
           color: "#D4B887 !important",
         },
         "& .pro-menu-item.active": {
-          background: "linear-gradient(to right, #D4B886, #EAEAEA)",
+          background: "linear-gradient(to right,rgb(201, 49, 49), #EAEAEA)",
           borderRadius: "10px",
           color: "#333 !important",
           fontWeight: "bold",
@@ -200,7 +200,7 @@ const Sidebar = ({ activeDashboard, setActiveDashboard }) => {
               //setActiveDashboard(0); // ✅ Set active dashboard
               handleSidebarClick(0); // ✅ Handle collapse
             }}
-            sx={{ margin: "15px 0 5px 20px", color: "rgb(0, 0, 0)" }}
+            sx={{ margin: "15px 0 5px 20px", color: "#333" }}
             icon={<CalendarTodayOutlinedIcon />}
           >
             Dashboard 1
@@ -211,16 +211,20 @@ const Sidebar = ({ activeDashboard, setActiveDashboard }) => {
               //setActiveDashboard(1); // ✅ Set active dashboard
               handleSidebarClick(1); // ✅ Handle collapse
             }}
+            sx={{ margin: "15px 0 5px 20px", color: "#333" }}
             icon={<CalendarTodayOutlinedIcon />}
+
           >
             Dashboard 2
           </MenuItem>
 
           <MenuItem
+            sx={{ margin: "15px 0 5px 20px", color: "#333" }}
             onClick={() => {
               //setActiveDashboard(2); // ✅ Set active dashboard
               handleSidebarClick(2); // ✅ Handle collapse
             }}
+            
             icon={<CalendarTodayOutlinedIcon />}
           >
             Dashboard 3
