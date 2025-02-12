@@ -251,26 +251,26 @@ const Dashboard2 = ({ visuals: allVisuals = [], isGridActive }) => {
 
         <Box display="flex" alignItems="center" gap="15px">
           {dashboard2.length > 0 ? <FilterBar visuals={dashboard2} /> : <Typography>No filters available</Typography>}
-          <Button
-            sx={{
-              backgroundColor: "#1565C1",
-              color: "#fff",
-              padding: "10px 20px",
-              fontSize: "14px",
-              fontWeight: "bold",
-              borderRadius: "10px",
-              boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.2)",
-              transition: "0.3s",
-              "&:hover": {
-                transform: "scale(1.05)",
-                backgroundColor: "#0D47A0",
-                boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.3)",
-              },
-            }}
-          >
-            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download 
-          </Button>
+      <Button
+        sx={{
+          backgroundColor: "#1565C1",
+          color: "#fff",
+          padding: "10px 20px",
+          fontSize: "14px",
+          fontWeight: "bold",
+          borderRadius: "10px",
+          boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.2)",
+          transition: "0.3s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            backgroundColor: "#0D47A0",
+            boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.3)",
+          },
+        }}
+      >
+        <DownloadOutlinedIcon sx={{ mr: "10px" }} />
+        Download 
+      </Button>
         </Box>
       </Box>
 

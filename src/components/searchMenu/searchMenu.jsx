@@ -29,7 +29,7 @@ const SearchMenu = ({ activeDashboard, setActiveDashboard }) => {
 
     setLoading(true);
     try {
-      const response = await fetch("http://127.0.0.1:8000/generate_visuals/", {
+      const response = await fetch("https://fastapi-app2-ji8g.onrender.com/generate_visuals", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: prompt }),

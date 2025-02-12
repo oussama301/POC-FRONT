@@ -36,7 +36,7 @@ function App() {
 
   // Fetch visual groups from backend
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/generate_visuals/", {
+    fetch("https://fastapi-app2-ji8g.onrender.com/generate_visuals", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text: "As a Sales Manager, I need to assess..." }),
